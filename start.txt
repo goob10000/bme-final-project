@@ -1,0 +1,14 @@
+The research question I plan to address is: "What species did SARS-CoV-2 most likey jump from into humans?" 
+To do this, I will compare codon usages in highly expressed genes from a variety of organisms (starting with the ones deemed most likely).
+I will need permutation testing to ensure that codon frequencies are truly significantly similar to COVID. I may also use PCA to look at relationships between certain codon usages and species/relation to COVID to get an idea of "distance." 
+I will need data on gene expression from a bunch of different organisms (and the gene transcripts themselves) so I can look at the codon frequencies. 
+Most of the data i've found so far is in FASTA format.
+I will be working under the assumption that all genes in COVID are highly expressed.
+I don't see getting data as a challenge so far. I will be getting most of my data from:
+- https://www.ncbi.nlm.nih.gov/datasets/genome/
+- https://www.kazusa.or.jp/codon/
+- GEO
+- Any place with bulk RNA seq data that I come across. This will help me get frequency and codon data.
+- nextstrain.org
+    - https://www.ncbi.nlm.nih.gov/nuccore/MT291829.1
+    - https://www.ncbi.nlm.nih.gov/nuccore/MN908947.3
