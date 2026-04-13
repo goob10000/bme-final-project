@@ -167,3 +167,23 @@ Also adjust for TPM
 1. PABPC1
 1. TUBA1B
 1. EEF2
+
+https://nextstrain.org/ncov/gisaid/global/6m
+
+
+#### Brief Todo:
+
+1. Rewrite codon_proportions.py to return a matrix of each gene with its codon bias and expression instead of selected n genes (so you can just fold the array for some n genes and do weighted averages and such)
+1. Adjust gene counts for TPM
+1. Find like 20-50 covid strains and generate all the alternate dated sequences to visualize how codon bias changes over time while inhabiting an organism
+1. Remove Mitochondrial genes
+
+1. Try randomizing gene order or weight to see if trend still visible with noise
+    1. Could measure SD between the species. Look at them ordered and unordered
+    1. Pick 10 genes at random, how scattered are they. True top 10 should be more scattered than 10 random genes in the genome
+        1. For every species, grab 10 random genes, look at variation across the species (SD), how spread out are the codon biases. Do this many times (1000 or something)
+        1. Comapre to SD of actual top 10 by expression
+1. Read paper on codon bias: https://www.biorxiv.org/content/10.1101/184283v1
+
+
+1. If I can narrow down what set of genes (be it top 10 expressed or maybe even interferon responses, I can use that instead of checking each time)

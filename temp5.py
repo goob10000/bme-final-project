@@ -25,11 +25,11 @@ paths = ["Results/Bat_MyotisLucifugus/topn_codon_proportions_Control.csv",
 
 dfs = {species[i]: pl.read_csv(paths[i]) for i in range(len(species))}
 
-vectors5 = 0
-vectors10 = 1
-vectors50 = 2
-vectors100 = 3
-vectors500 = 4
+# vectors5 = 0
+# vectors10 = 1
+# vectors50 = 2
+# vectors100 = 3
+# vectors500 = 4
 
 vec = [5,10,15,20,25,30,35,40,45,50,100,200,300,400,500]
 
@@ -87,22 +87,42 @@ plt.legend(nonCovidSpecies)
 plt.show()
 
 
-l = [x.filter(pl.col("aa") == "A") for x in dfs.values()]
+# l = [x.filter(pl.col("aa") == "A") for x in dfs.values()]
 
-fig = plt.figure(figsize=(10, 6), layout="constrained")
-for i, c in enumerate(l[0]["codon"]):
+fig = plt.figure(figsize=(24, 24), layout="constrained")
+for i, c in enumerate(codons):
     print(c)
-    a = fig.add_subplot(2, 2, i+1)
+    a = fig.add_subplot(8, 8, i+1)
     for j, s in enumerate(species):
-        a.plot(l[j].filter(pl.col("codon") == c)["top_n"], l[j].filter(pl.col("codon") == c)["codon_proportion"], label=s, marker="o")
+        cf = dfs[s].filter(pl.col("codon") == c)
+        a.plot(cf["top_n"], cf["codon_proportion"], label=s, marker="o")
         a.set_title(f"Codon {c}")
         # a.set_ylim(0, 0.7)
-        a.set_xlabel("log(Top N Genes)")
-        a.set_ylabel("Codon Proportion")
+        # a.set_xlabel("log(Top N Genes)")
+        # a.set_ylabel("Codon Proportion")
         # a.set_xticks(np.exp([0, 1, 2, 3, 4, 5]))
         a.set_xscale("log")
         # a.set_xticks(range(len(species)))
         # a.set_xticklabels(species, rotation=45)
+        a.set_xticks([])
+        # a.set_yticks([])
 
-plt.legend()
+# plt.legend()
+plt.savefig("Figure_3.2.png", dpi=300)
+
+
+dfs["Human1"].filter(pl.col("codon") == "GCA").columns
+
+fig = plt.figure(figsize=(10, 6), layout="constrained")
+ax = fig.add_subplot(1, 1, 1)
+for codon in dfs["Human1"]["codon"].unique():
+    cf = dfs["Human1"].filter(pl.col("codon") == codon).filter(pl.col("top_n") <= 2000)#.filter(pl.col("top_n") >= 20)
+    ax.plot(cf["top_n"], cf["codon_proportion"], label=codon)
+ax.set_title("Human1 Codon Proportions")
+ax.set_xlabel("Top N Genes")
+ax.set_ylabel("Codon Proportion")
+ax.vlines([100], 0, 1, colors='red', linestyles='dashed')
+# ax.set_xscale("log")
+# ax.legend()
 plt.show()
+

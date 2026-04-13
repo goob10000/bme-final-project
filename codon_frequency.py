@@ -23,9 +23,6 @@ import numpy as np
 from collections import Counter, defaultdict
 from pathlib import Path
 
-# ---------------------------------------------------------------------------
-# Standard genetic code (uppercase DNA)
-# ---------------------------------------------------------------------------
 GENETIC_CODE: dict[str, str] = {
     "TTT": "F", "TTC": "F", "TTA": "L", "TTG": "L",
     "CTT": "L", "CTC": "L", "CTA": "L", "CTG": "L",
@@ -45,7 +42,6 @@ GENETIC_CODE: dict[str, str] = {
     "GGT": "G", "GGC": "G", "GGA": "G", "GGG": "G",
 }
 
-# ---------------------------------------------------------------------------
 # Keep only codons for amino acids with synonymous alternatives.
 AA_TO_CODONS: dict[str, list[str]] = defaultdict(list)
 for _codon, _aa in GENETIC_CODE.items():
@@ -66,10 +62,6 @@ CODON_INDEX: dict[str, int] = {codon: i for i, codon in enumerate(CODON_ORDER)}
 _VALID_BASES = frozenset("ACGT")
 
 
-# ---------------------------------------------------------------------------
-# Core computation
-# ---------------------------------------------------------------------------
-
 def transcript_codon_counts(sequence: str, offset: int) -> Counter:
     """Count codons in *sequence* starting at *offset* (frame-corrected 0-based).
 
@@ -84,11 +76,9 @@ def transcript_codon_counts(sequence: str, offset: int) -> Counter:
     return counter
 
 
-def gene_codon_count_dict(transcripts: dict) -> dict[str, int]:
+def gene_codon_count_dict(transcripts: dict) -> tuple[dict[str, int], float]:
     """Return filtered codon counts for one gene.
-
-    Counts are summed across all transcripts. Each transcript's
-    ``first_complete_codon_offset`` is used so reading begins on a full codon.
+    Each transcript's ``first_complete_codon_offset`` is used so reading begins on a full codon.
 
     Only codons from amino acids with multiple synonymous codons are kept.
 
@@ -99,42 +89,53 @@ def gene_codon_count_dict(transcripts: dict) -> dict[str, int]:
         ``{transcript_id: {sequence, first_complete_codon_offset, ...}}``.
     """
     total: Counter = Counter()
+    numTranscripts = len(transcripts.values()) ## Average transcripts if there are more than one.
+    cdsLength = 0
     for record in transcripts.values():
         offset = record.get("first_complete_codon_offset", 0)
         total += transcript_codon_counts(record["sequence"], offset)
+        cdsLength += record["cds_length"]
 
-    return {codon: int(total[codon]) for codon in CODON_ORDER if total[codon] > 0}
+    return ({codon: int(total[codon]/numTranscripts) for codon in CODON_ORDER if total[codon] > 0}, cdsLength/numTranscripts)
 
 
-def gene_codon_frequency_array(transcripts: dict) -> np.ndarray:
-    """Return a filtered codon-count array for one gene.
+def gene_codon_frequency_array(transcripts: dict) -> tuple[np.ndarray, float]:
+    """Return a filtered codon-proportion array for one gene.
 
+    For each amino acid, codon values are normalized to proportions that sum to 1
+    across that amino acid's synonymous codons present in the gene.
     Array columns follow `CODON_ORDER`.
     """
-    counts = gene_codon_count_dict(transcripts)
+    counts, length = gene_codon_count_dict(transcripts)
 
-    arr = np.zeros(len(CODON_ORDER), dtype=np.int64)
+    arr = np.zeros(len(CODON_ORDER), dtype=np.float64)
+    aa_totals: dict[str, float] = defaultdict(float)
+    for codon, count in counts.items():
+        aa_totals[GENETIC_CODE[codon]] += float(count)
+
     for codon, count in counts.items():
         idx = CODON_INDEX.get(codon)
-        if idx is not None:
-            arr[idx] = count
-    return arr
+        aa_total = aa_totals[GENETIC_CODE[codon]]
+        if idx is not None and aa_total > 0:
+            arr[idx] = float(count) / aa_total
+    return arr, length
 
 
 def build_gene_codon_count_dict(gene_dict: dict) -> dict[str, dict[str, int]]:
     """Return `{gene_id: {codon: count}}` for all genes.
 
     Only codons in `CODON_ORDER` are included.
+
+    Returns a dict that takes the gene ID and returns a dict [codon → count] for that gene.
     """
     return {
-        gene_id: gene_codon_count_dict(transcripts)
-        for gene_id, transcripts in gene_dict.items()
+        gene_id: gene_codon_count_dict(transcripts)[0] for gene_id, transcripts in gene_dict.items()
     }
 
 
 def build_codon_frequency_matrix(
     gene_dict: dict,
-) -> tuple[list[str], np.ndarray]:
+) -> tuple[list[str], np.ndarray, np.ndarray]:
     """Compute codon frequency arrays for every gene in *gene_dict*.
 
     Returns
@@ -145,30 +146,25 @@ def build_codon_frequency_matrix(
         Row i corresponds to gene_ids[i]; column j to CODON_ORDER[j].
     """
     gene_ids = sorted(gene_dict.keys())
-    matrix = np.zeros((len(gene_ids), len(CODON_ORDER)), dtype=np.int64)
+    matrix = np.zeros((len(gene_ids), len(CODON_ORDER)), dtype=np.float64)
+    counts = np.zeros(len(gene_ids), dtype=np.float64)
     for i, gene_id in enumerate(gene_ids):
-        matrix[i] = gene_codon_frequency_array(gene_dict[gene_id])
-    return gene_ids, matrix
-
-
-# ---------------------------------------------------------------------------
-# CLI
-# ---------------------------------------------------------------------------
+        matrix[i], counts[i] = gene_codon_frequency_array(gene_dict[gene_id])
+    return gene_ids, matrix, counts
 
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Convert CDS JSON to per-gene codon counts (excluding singleton-AA codons)."
     )
     parser.add_argument(
-        "json_file",
+        "--json_file",
         nargs="?",
-        default="HumanGenome/gene_id_to_sequence_transcripts.json",
         help="Path to the gene_id_to_transcripts JSON (default: %(default)s)",
     )
     parser.add_argument(
         "-o", "--output",
-        default=None,
-        help="Optional output path (.npz for matrix or .json for dict).",
+        help="Required output path (.npz for matrix or .json for dict).",
+        required=True,
     )
     parser.add_argument(
         "--show-codons",
@@ -188,32 +184,22 @@ def main() -> None:
         gene_dict = json.load(fh)
 
     print(f"Computing codon counts for {len(gene_dict):,} genes …")
-    gene_count_dict = build_gene_codon_count_dict(gene_dict)
-    gene_ids, matrix = build_codon_frequency_matrix(gene_dict)
+    gene_count_dict = build_gene_codon_count_dict(gene_dict) # dict[gene_id → dict[codon → count]]
+    gene_ids, matrix, counts = build_codon_frequency_matrix(gene_dict)
 
     print(f"Matrix shape: {matrix.shape}  (genes × {len(CODON_ORDER)} codons)")
     print(f"Total codons counted: {matrix.sum():,}")
+    print(f"Average codons per gene: {counts.mean():.1f}")
 
-    if args.output:
-        out_path = Path(args.output)
-        if out_path.suffix.lower() == ".json":
-            with open(out_path, "w", encoding="utf-8") as fh:
-                json.dump(gene_count_dict, fh, indent=2)
-            print(f"Saved codon-count dict to {out_path}")
-        else:
-            np.savez_compressed(
-                out_path,
-                matrix=matrix,
-                gene_ids=np.array(gene_ids),
-                codon_order=np.array(CODON_ORDER),
-            )
-            print(f"Saved matrix to {out_path}")
-    else:
-        # Print a small summary for the first 5 genes
-        print("\nSample output (first 5 genes, count of retained codons per gene):")
-        for i in range(min(5, len(gene_ids))):
-            print(f"  {gene_ids[i]}  total_codons={matrix[i].sum()}")
-
+    out_path = Path(args.output)
+    np.savez_compressed(
+        out_path,
+        matrix=matrix,
+        gene_ids=np.array(gene_ids),
+        codon_order=np.array(CODON_ORDER),
+        counts=counts,
+    )
+    print(f"Saved matrix to {out_path}")
 
 if __name__ == "__main__":
     main()
