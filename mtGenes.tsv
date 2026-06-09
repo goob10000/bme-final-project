@@ -1,0 +1,256 @@
+species	gene_id	gene_name	gene_biotype	chromosome	gtf_file
+Bat_MyotisLucifugus	GeneID:27214804	MT-TF	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214805	MT-RNR1	rRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214806	MT-TV	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214807	MT-RNR2	rRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214809	MT-ND1	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214791	MT-TI	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214810	MT-TQ	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214811	MT-TM	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214812	MT-ND2	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214792	MT-TW	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214813	MT-TA	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214814	MT-TN	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214815	MT-TC	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214816	MT-TY	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214817	MT-CO1	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214818	MT-TD	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214819	MT-CO2	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214794	MT-TK	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214820	MT-ATP8	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214795	MT-ATP6	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214796	MT-CO3	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214797	MT-TG	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214821	MT-ND3	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214798	MT-TR	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214822	MT-ND4L	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214799	MT-ND4	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214800	MT-TH	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214825	MT-ND5	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214801	MT-ND6	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214802	MT-TE	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214826	MT-CYB	protein_coding	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214803	MT-TT	tRNA	MT	NC_029849.1
+Bat_MyotisLucifugus	GeneID:27214827	MT-TP	tRNA	MT	NC_029849.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TF	MT-TF	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-RNR1	MT-RNR1	rRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TV	MT-TV	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-RNR2	MT-RNR2	rRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TL1	MT-TL1	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ND1	MT-ND1	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TI	MT-TI	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TQ	MT-TQ	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TM	MT-TM	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ND2	MT-ND2	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TW	MT-TW	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TA	MT-TA	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TN	MT-TN	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TC	MT-TC	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TY	MT-TY	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-CO1	MT-CO1	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TS1	MT-TS1	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TD	MT-TD	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-CO2	MT-CO2	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TK	MT-TK	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ATP8	MT-ATP8	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ATP6	MT-ATP6	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-CO3	MT-CO3	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TG	MT-TG	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ND3	MT-ND3	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TR	MT-TR	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ND4L	MT-ND4L	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ND4	MT-ND4	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TH	MT-TH	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TS2	MT-TS2	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TL2	MT-TL2	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ND5	MT-ND5	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-ND6	MT-ND6	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TE	MT-TE	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-CYB	MT-CYB	protein_coding	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TT	MT-TT	tRNA	MT	MK089295.1
+Bat_RhinolophusFerrumequinum	MK089295.1:MT-TP	MT-TP	tRNA	MT	MK089295.1
+Human	ENSG00000210049	MT-TF	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000211459	MT-RNR1	Mt_rRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210077	MT-TV	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210082	MT-RNR2	Mt_rRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000209082	MT-TL1	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198888	MT-ND1	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210100	MT-TI	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210107	MT-TQ	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210112	MT-TM	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198763	MT-ND2	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210117	MT-TW	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210127	MT-TA	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210135	MT-TN	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210140	MT-TC	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210144	MT-TY	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198804	MT-CO1	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210151	MT-TS1	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210154	MT-TD	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198712	MT-CO2	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210156	MT-TK	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000228253	MT-ATP8	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198899	MT-ATP6	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198938	MT-CO3	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210164	MT-TG	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198840	MT-ND3	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210174	MT-TR	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000212907	MT-ND4L	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198886	MT-ND4	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210176	MT-TH	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210184	MT-TS2	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210191	MT-TL2	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198786	MT-ND5	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198695	MT-ND6	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210194	MT-TE	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000198727	MT-CYB	protein_coding	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210195	MT-TT	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Human	ENSG00000210196	MT-TP	Mt_tRNA	MT	Genomes\Human\Homo_sapiens.GRCh38.115.chr.gtf
+Mouse	ENSMUSG00000064336	mt-Tf	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064337	mt-Rnr1	Mt_rRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064338	mt-Tv	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064339	mt-Rnr2	Mt_rRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064340	mt-Tl1	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064341	mt-Nd1	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064342	mt-Ti	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064343	mt-Tq	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064344	mt-Tm	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064345	mt-Nd2	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064346	mt-Tw	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064347	mt-Ta	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064348	mt-Tn	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064349	mt-Tc	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064350	mt-Ty	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064351	mt-Co1	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064352	mt-Ts1	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064353	mt-Td	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064354	mt-Co2	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064355	mt-Tk	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064356	mt-Atp8	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064357	mt-Atp6	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064358	mt-Co3	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064359	mt-Tg	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064360	mt-Nd3	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064361	mt-Tr	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000065947	mt-Nd4l	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064363	mt-Nd4	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064364	mt-Th	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064365	mt-Ts2	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064366	mt-Tl2	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064367	mt-Nd5	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064368	mt-Nd6	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064369	mt-Te	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064370	mt-Cytb	protein_coding	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064371	mt-Tt	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Mouse	ENSMUSG00000064372	mt-Tp	Mt_tRNA	MT	Genomes\Mouse\Mus_musculus.GRCm39.115.chr.gtf
+Pangolin_ManisJavanica	NC_026781.1:MT-TF	MT-TF	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-RNR1	MT-RNR1	rRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TV	MT-TV	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-RNR2	MT-RNR2	rRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TL1	MT-TL1	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019682	MT-ND1	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TI	MT-TI	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TQ	MT-TQ	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TM	MT-TM	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019670	MT-ND2	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TW	MT-TW	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TA	MT-TA	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TN	MT-TN	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TC	MT-TC	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TY	MT-TY	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019671	MT-CO1	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TS1	MT-TS1	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TD	MT-TD	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019672	MT-CO2	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TK	MT-TK	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019673	MT-ATP8	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019674	MT-ATP6	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019675	MT-CO3	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TG	MT-TG	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019676	MT-ND3	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TR	MT-TR	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019677	MT-ND4L	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019678	MT-ND4	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TH	MT-TH	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TS2	MT-TS2	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TL2	MT-TL2	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019679	MT-ND5	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019680	MT-ND6	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TE	MT-TE	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	GeneID:24019681	MT-CYB	protein_coding	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TT	MT-TT	tRNA	MT	NC_026781.1
+Pangolin_ManisJavanica	NC_026781.1:MT-TP	MT-TP	tRNA	MT	NC_026781.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TF	MT-TF	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-RNR1	MT-RNR1	rRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TV	MT-TV	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-RNR2	MT-RNR2	rRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TL1	MT-TL1	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123982	MT-ND1	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TI	MT-TI	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TQ	MT-TQ	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TM	MT-TM	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123981	MT-ND2	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TW	MT-TW	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TA	MT-TA	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TN	MT-TN	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TC	MT-TC	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TY	MT-TY	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123973	MT-CO1	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TS1	MT-TS1	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TD	MT-TD	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123974	MT-CO2	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TK	MT-TK	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123975	MT-ATP8	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123976	MT-ATP6	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123977	MT-CO3	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TG	MT-TG	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123983	MT-ND3	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TR	MT-TR	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123978	MT-ND4L	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123980	MT-ND4	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TH	MT-TH	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TS2	MT-TS2	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TL2	MT-TL2	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123979	MT-ND5	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123971	MT-ND6	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TE	MT-TE	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	GeneID:11123972	MT-CYB	protein_coding	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TT	MT-TT	tRNA	MT	NC_016008.1
+Pangolin_ManisPentadactyla	NC_016008.1:MT-TP	MT-TP	tRNA	MT	NC_016008.1
+Pig	ENSSSCG00000018060		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018061		Mt_rRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018062		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018063		Mt_rRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018064		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018065	ND1	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018066		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018067		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018068		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018069	ND2	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018070		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018071		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018072		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018073		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018074		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018075	COX1	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018076		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018077		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018078	COX2	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018079		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018080	ATP8	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018081	ATP6	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018082	COX3	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018083		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018084	ND3	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018085		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018086	ND4L	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018087	ND4	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018088		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018089		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018090		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018091	ND5	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018092	ND6	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018093		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018094	CYTB	protein_coding	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018095		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf
+Pig	ENSSSCG00000018096		Mt_tRNA	MT	Genomes\Pig\Sus_scrofa.Sscrofa11.1.115.chr.gtf

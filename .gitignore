@@ -212,3 +212,6 @@ Expression/
 Genomes/
 t
 .vscode/
+.fake
+*.csv
+*.npy

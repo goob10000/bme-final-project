@@ -1,6 +1,7 @@
 import polars as pl
 import numpy as np
 import matplotlib.pyplot as plt
+from AnalysisFunctions import klDivergence
 
 species = ["Bat_MyotisLucifugus", 
            "Bat_RhinolophusFerrumequinum", 
@@ -75,6 +76,7 @@ for i in range(arr.shape[1]):
         # print(f"covid_dist={covid_dist.sum()}")
         # print(f"{species} dist={species_dist.sum()}")
         # print(f"{s + '-' + str(vec[i]) + ': ' + str(abs((np.log1p(covid_dist)-np.log1p(species_dist)).sum()))}")
+        # kl_divergence = klDivergence(covid_dist, species_dist)
         kl_divergence = np.sum(np.where(covid_dist != 0, covid_dist * np.log(covid_dist / (species_dist + 1e-10)), 0))
         print(f"KL Divergence between Covid and {s} for top {vec[i]} genes: {kl_divergence}")
         div[species.index(s), i] = kl_divergence

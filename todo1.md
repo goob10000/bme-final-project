@@ -1,0 +1,5 @@
+- [x] Fix influenza M2 and NEP missing
+- [] Look at the same graphs but with an emphasis on codons of note
+- [] Add more species influenza came from to look at codon adaptation to/from
+- [] Generate a tree and look at it that way
+- [] Perform the same analysis but on sars-cov-2 to see if there is anything there

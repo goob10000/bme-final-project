@@ -8,9 +8,9 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 
-GENE_ID_RE = re.compile(r'gene_id\s+"([^"]+)"')
-TRANSCRIPT_ID_RE = re.compile(r'transcript_id\s+"([^"]+)"')
-TAG_RE = re.compile(r'tag\s+"([^"]+)"')
+GENE_ID_RE = re.compile(r'gene_id\s+(?:"|"")([^"]+)(?:"|"")')
+TRANSCRIPT_ID_RE = re.compile(r'transcript_id\s+(?:"|"")([^"]+)(?:"|"")')
+TAG_RE = re.compile(r'tag\s+(?:"|"")([^"]+)(?:"|"")')
 
 
 @dataclass(frozen=True)

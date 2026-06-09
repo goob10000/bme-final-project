@@ -9,7 +9,7 @@ alphabetically by codon.
 
 Typical use
 -----------
-    python codon_frequency.py HumanGenome/gene_id_to_sequence_transcripts.json
+    python codon_frequency.py HumanGenome/genes.json
 
 Outputs
 -------
