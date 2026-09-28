@@ -27,7 +27,7 @@ The expression tables reported above can be reproduced with the commands below f
 Run the multi-species builder (this generates the *M. javanica* table using SRR8943548):
 
 ```bash
-wsl bash /mnt/c/Projects/bme-final-project/Expression/Pangolin/build_pangolin_expression_data.sh
+bash Expression/Pangolin/build_pangolin_expression_data.sh
 ```
 
 Primary output artifact:
@@ -44,7 +44,7 @@ Key intermediate artifacts:
 Run the dedicated full pipeline script (SRR29468387):
 
 ```bash
-wsl bash /mnt/c/Projects/bme-final-project/Expression/Pangolin/run_full_pentadactyla.sh
+bash Expression/Pangolin/run_full_pentadactyla.sh
 ```
 
 Primary output artifact:
